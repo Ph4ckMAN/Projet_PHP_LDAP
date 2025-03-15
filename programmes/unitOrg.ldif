@@ -1,0 +1,11 @@
+dn: ou=People,dc=iut6-kourou,dc=fr
+objectClass: top
+objectClass: organizationalUnit
+description: Branche People
+ou: People
+
+dn: ou=Groups,dc=iut6-kourou,dc=fr
+objectClass: top
+objectClass: organizationalUnit
+description: Branche Groups
+ou: Groups

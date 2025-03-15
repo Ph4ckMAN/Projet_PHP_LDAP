@@ -1,0 +1,243 @@
+/*------------------------------------------------------------------------------
+        WEB : page design
+------------------------------------------------------------------------------*/
+
+/*==============================
+        Layout
+==============================*/
+
+/*==============================
+        Style
+==============================*/
+
+/* Set font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #FBFBFB;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 79px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 9px 13px 10px;
+}
+
+.navbar h1 {
+    font-size: 38px;
+    margin: 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.navbar h1:hover {
+    transform: scale(1.1);
+}
+
+/* Logo */
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Container principal de la page */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Inputs */
+.input-style {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-style:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Buttons */
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(2px);
+}
+
+/* Anonymous connection link */
+.anonymousConnection {
+    font-size: 18px;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    margin-left: 38%;
+    border: none;
+    background: none;
+    padding: 0;
+    text-align: center;
+}
+
+.anonymousConnection:hover {
+    text-decoration: underline;
+    transform: translateY(2px);
+
+}
+
+/* Message box */
+.message {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/*==============================
+        Responsive design
+==============================*/
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .input-style {
+        font-size: 14px;
+    }
+
+    .submit-button, .anonymousConnection {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 16px;
+    }
+
+    .logo-container {
+        margin-top: 20px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1200px) {
+    .navbar h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        width: 85%;
+        padding: 25px;
+    }
+
+    .container h2 {
+        font-size: 26px;
+    }
+
+    .input-style {
+        font-size: 16px;
+    }
+
+    .submit-button, .anonymousConnection {
+        font-size: 18px;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1200px) {
+    .navbar h1 {
+        font-size: 38px;
+    }
+
+    .container {
+        width: 80%;
+        padding: 40px;
+    }
+
+    .container h2 {
+        font-size: 30px;
+    }
+
+    .input-style {
+        font-size: 18px;
+    }
+
+    .submit-button, .anonymousConnection {
+        font-size: 18px;
+    }
+}

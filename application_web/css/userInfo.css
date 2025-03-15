@@ -1,0 +1,162 @@
+/*------------------------------------------------------------------------------
+        WEB : page design
+------------------------------------------------------------------------------*/
+
+/*==============================
+        Layout
+==============================*/
+
+/*==============================
+        Style
+==============================*/
+
+/* Set font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #FBFBFB;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 79px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 9px 13px 10px;
+}
+
+.navbar h1 {
+    font-size: 38px;
+    margin: 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.navbar h1:hover {
+    transform: scale(1.1);
+}
+
+/* Container principal de la page */
+.user-info {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Labels */
+strong {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Anonymous connection link */
+.logout-link {
+    font-size: 18px;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    margin-left: 46%;
+    border: none;
+    background: none;
+    padding: 0;
+    text-align: center;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+    transform: translateY(2px);
+}
+
+p {
+    margin-top: 25px;
+}
+/*==============================
+        Responsive design
+==============================*/
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar h1 {
+        font-size: 28px;
+    }
+
+    .user-info {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .user-info h2 {
+        font-size: 24px;
+    }
+
+    .logout-link {
+        font-size: 16px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1200px) {
+    .navbar h1 {
+        font-size: 32px;
+    }
+
+    .user-info {
+        width: 85%;
+        padding: 25px;
+    }
+
+    .user-info h2 {
+        font-size: 26px;
+    }
+
+    .logout-link {
+        font-size: 18px;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1200px) {
+    .navbar h1 {
+        font-size: 38px;
+    }
+
+    .user-info {
+        width: 80%;
+        padding: 40px;
+    }
+
+    .user-info h2 {
+        font-size: 30px;
+    }
+
+    .logout-link {
+        font-size: 18px;
+    }
+}
