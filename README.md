@@ -26,7 +26,9 @@ slapd est purgé ?* **oui**
 
 *Autoriser le protocol LDAPv2 ?* **non**
 
-## 2.1 Génération des fichier LDIF
+## 2.Génération des fichiers LDIF
+
+### 2.1 Génération des fichier LDIF
 
 On créer un fichier **unitOrg.ldif** :
 ```
@@ -44,7 +46,7 @@ ou: Groups
 ```
 Ce fichier va contenir les organizational Units de notre base LDAP.
 
-## 2.2 Création d’un code python pour générer les fichiers
+### 2.2 Création d’un code python pour générer les fichiers
 
 Le script Python **generate_ldif.py** permet de convertir les données
 d’un fichier CSV en trois fichiers principaux :
@@ -63,7 +65,7 @@ Ce fichier **user.csv** est écrit sous forme : *FORMATION;NOM;Prénom;TÉLÉPHO
 
 Par exemple : *BUT3RT;JOHN;Doe;0611111111*
 
-## 2.3 Remplissage de la base
+### 2.3 Remplissage de la base
 
 Après avoir obtenu les fichiers .ldif, on remplit les classes avec le Organizational Unit "Groups" : 
 ```
@@ -78,4 +80,22 @@ On peuple la base avec les utilisateurs :
 ldapmodify -x -H ldap://<IP Serveur LDAP> -D "cn=admin,dc=iut6-kourou,dc=fr" -W -f user.ldif
 ```
 ## 3. Application web
+
+Cette application web permet à l'utilisateur d'intéragir graphiquement avec la base LDAP.
+
+Tout d'abord il faut mettre l'adresse IP de votre serveur LDAP dans les codes où il y a écrit <u>"IP Serveur LDAP"</u>
+
+### 3.1 Fonctionnalités
+
+(mettre des photo)
+
+Pour l'utilisateur Admin
+Filtre de recherche 
+Ajout d'un utilisateur 
+Suppréssion d'un utilisateur
+Modification d'un numéro de téléphone
+
+Pour un utilisateur de la base 
+Possibilité de conexion 
+Affichage de ses propres informations 
 
