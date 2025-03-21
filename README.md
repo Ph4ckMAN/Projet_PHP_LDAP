@@ -85,9 +85,22 @@ Cette application web permet à l'utilisateur d'intéragir graphiquement avec la
 
 Tout d'abord il faut mettre l'adresse IP de votre serveur LDAP dans les codes où il y a écrit <u>"IP Serveur LDAP"</u>
 
-### 3.1 Fonctionnalités
+L'interface de connexion se présente comme ceci : 
+![connexion](https://github.com/user-attachments/assets/7279bc84-6f87-4a86-a009-b64d705730f2)
 
-(mettre des photo)
+### 3.1 Administrateur
+
+L'utilisateur **admin** possède plusieurs fonctionnalités.
+
+On se connecte et on arrive sur cette page : 
+![adminPanel](https://github.com/user-attachments/assets/d7b83268-faf3-4ca7-9661-fa9cbabe518c)
+
+Ici sont affchés tous les utilisateurs de la base LDAP.
+
+On peut voir plusieurs fonctionnalités.
+
+#### 3.1.1 Filtre de recherche
+
 
 Pour l'utilisateur Admin
 Filtre de recherche 
