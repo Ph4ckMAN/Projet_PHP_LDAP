@@ -1,6 +1,6 @@
 # Projet_PHP_LDAP
 
-Voici un projet LDAP utilisant Python et PHP. Ce projet consistait à mettre en place un annuaire LDAP pour centraliser la gestion des utilisateurs et des groupes. Nous avons dû développer une application web permettant l’ajout, la modification, la suppression et la recherche des données, avec un contrôle d’accès adapté aux rôles des utilisateurs.
+Voici un projet LDAP utilisant Python et PHP effectué en 2ème année de BUT Réseaux et Télécommunications à l'IUT de Kourou. Ce projet consistait à mettre en place un annuaire LDAP pour centraliser la gestion des utilisateurs et des groupes. Nous avons dû développer une application web permettant l’ajout, la modification, la suppression et la recherche des données, avec un contrôle d’accès adapté aux rôles des utilisateurs.
 
 ## 1. Installation de slapd
 
